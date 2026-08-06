@@ -353,11 +353,11 @@ footer.site{ border-top:1px solid var(--line); background:var(--black-soft); pad
 .progress-ship p b{ color:var(--red); }
 .bar{ height:8px; background:var(--black); border-radius:999px; overflow:hidden; }
 .bar div{ height:100%; background:linear-gradient(90deg,var(--red),#ff5a5a); border-radius:999px; transition:width .4s ease; }
-.cart-item{ display:grid; grid-template-columns:90px 1fr auto; gap:16px; background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:16px; margin-bottom:14px; align-items:center; }
+.cart-item{ display:grid; grid-template-columns:90px minmax(0,1fr) auto; gap:16px; background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:16px; margin-bottom:14px; align-items:center; }
 .cart-item .thumb{ width:90px; height:90px; border-radius:10px; background:linear-gradient(135deg,var(--tile-a),var(--tile-b)); display:flex; align-items:center; justify-content:center; font-size:2.4rem; }
 .cart-item h4{ font-size:.95rem; margin-bottom:4px; }
 .cart-item .meta{ color:var(--muted); font-size:.8rem; margin-bottom:8px; }
-.cart-item .row-bottom{ display:flex; align-items:center; gap:16px; }
+.cart-item .row-bottom{ display:flex; align-items:center; gap:16px; flex-wrap:wrap; }
 .remove-btn{ color:var(--muted); font-size:.78rem; border-bottom:1px solid transparent; }
 .remove-btn:hover{ color:var(--red); border-color:var(--red); }
 .cart-item .price{ text-align:right; font-weight:800; font-size:1.05rem; }
@@ -426,6 +426,15 @@ footer.site{ border-top:1px solid var(--line); background:var(--black-soft); pad
   .form-grid{ grid-template-columns:1fr; }
   .form-card{ padding:18px; }
   .pdp-sizes button, .size-grid button{ min-width:0; }
+
+  .cart-item{
+    grid-template-columns:64px minmax(0,1fr);
+    grid-template-areas:"thumb info" "price price";
+    row-gap:10px; padding:14px;
+  }
+  .cart-item .thumb{ grid-area:thumb; width:64px; height:64px; font-size:1.8rem; }
+  .cart-item > div:nth-child(2){ grid-area:info; min-width:0; }
+  .cart-item .price{ grid-area:price; text-align:left; font-size:1.05rem; }
 }
 
 @media (max-width:380px){
