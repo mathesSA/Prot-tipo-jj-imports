@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<script>(function(){try{document.documentElement.setAttribute('data-theme', localStorage.getItem('jj_theme') || 'dark');}catch(e){}})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carrinho — JJ Imports</title>
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="header-inner container">
+    <a href="index.html" class="logo"><img src="assets/logo.svg" alt="JJ Imports"><b>JJ <em>IMPORTS</em></b></a>
+    <div class="search-box"><span>🔍</span><input type="text" placeholder="Busque por tênis, marca, categoria..."></div>
+    <div class="header-icons">
+      <button class="theme-toggle" aria-label="Alternar tema claro/escuro">☀️</button>
+      <a href="#" class="icon-link">👤<small>Conta</small></a>
+      <a href="#" class="icon-link">♡<small>Desejos</small></a>
+      <a href="carrinho.html" class="icon-link">🛒<span class="badge js-cart-count">0</span><small>Carrinho</small></a>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <div class="breadcrumb"><a href="index.html">Início</a> / <span>Carrinho</span></div>
+  <h1 style="font-size:2rem; margin-bottom:20px">Seu carrinho</h1>
+
+  <div class="cart-wrap">
+    <div>
+      <div class="progress-ship">
+        <p class="js-ship-text">Adicione produtos para calcular o frete</p>
+        <div class="bar"><div style="width:0%"></div></div>
+      </div>
+
+      <div class="js-cart-list"></div>
+
+      <a href="produtos.html" class="btn btn-outline" style="margin-top:10px">← Continuar comprando</a>
+    </div>
+
+    <aside class="summary">
+      <h3>Resumo do pedido</h3>
+      <div class="summary-row"><span>Subtotal</span><span class="js-subtotal">R$ 0,00</span></div>
+      <div class="summary-row"><span>Frete</span><span class="js-shipping">Grátis</span></div>
+      <div class="summary-row"><span>Desconto Pix (10%)</span><span class="js-pixdiscount" style="color:var(--green)">- R$ 0,00</span></div>
+      <div class="summary-row total"><span>Total</span><span class="js-total">R$ 0,00</span></div>
+
+      <div class="coupon">
+        <input type="text" placeholder="Cupom de desconto">
+        <button class="btn btn-ghost btn-sm">Aplicar</button>
+      </div>
+
+      <a href="checkout.html" class="btn btn-primary btn-block">Finalizar compra →</a>
+
+      <div class="trust-mini">
+        <span>🔒 Ambiente seguro</span>
+        <span>✈ Produtos originais</span>
+        <span>↩ Troca garantida</span>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="container">
+    <div class="foot-bottom"><span>© 2026 JJ Imports.</span><span>Protótipo — não processa pagamentos reais.</span></div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

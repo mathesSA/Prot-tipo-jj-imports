@@ -1,0 +1,23 @@
+<svg viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="JJ Imports">
+  <circle cx="110" cy="110" r="104" fill="#0b0b0d"/>
+  <circle cx="110" cy="110" r="98" fill="none" stroke="#f5f5f5" stroke-width="2.5" stroke-dasharray="6 7"/>
+
+  <g font-family="'Anton', 'Arial Black', sans-serif" fill="#f5f5f5">
+    <text x="46" y="118" font-size="88" letter-spacing="-4">J</text>
+    <text x="98" y="118" font-size="88" letter-spacing="-4">J</text>
+  </g>
+  <line x1="42" y1="140" x2="150" y2="52" stroke="#f5f5f5" stroke-width="4"/>
+
+  <g transform="translate(150,132) rotate(-25)">
+    <path d="M0 0 L22 4 L4 12 L6 20 L0 17 L-6 20 L-4 12 L-22 4 Z" fill="#f5f5f5"/>
+  </g>
+
+  <g font-family="'Anton','Arial Black',sans-serif" fill="#f5f5f5">
+    <text x="34" y="176" font-size="27" letter-spacing="2">IMP</text>
+    <text x="130" y="176" font-size="27" letter-spacing="2">RTS</text>
+  </g>
+  <g transform="translate(118,168)">
+    <path d="M0 -11 C6 -11 10 -5 10 1 C10 8 0 17 0 17 C0 17 -10 8 -10 1 C-10 -5 -6 -11 0 -11 Z" fill="#e30613"/>
+    <circle cx="0" cy="0" r="4" fill="#0b0b0d"/>
+  </g>
+</svg>

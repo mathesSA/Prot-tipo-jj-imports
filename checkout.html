@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<script>(function(){try{document.documentElement.setAttribute('data-theme', localStorage.getItem('jj_theme') || 'dark');}catch(e){}})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finalizar compra — JJ Imports</title>
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="header-inner container">
+    <a href="index.html" class="logo"><img src="assets/logo.svg" alt="JJ Imports"><b>JJ <em>IMPORTS</em></b></a>
+    <div class="header-icons" style="margin-left:auto">
+      <span style="color:var(--muted); font-size:.85rem">🔒 Ambiente 100% seguro</span>
+      <button class="theme-toggle" aria-label="Alternar tema claro/escuro">☀️</button>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <div class="steps">
+    <div class="step done"><div class="dot">✔</div><span>Carrinho</span></div>
+    <div class="step-line"></div>
+    <div class="step active"><div class="dot">2</div><span>Pagamento</span></div>
+    <div class="step-line"></div>
+    <div class="step"><div class="dot">3</div><span>Confirmação</span></div>
+  </div>
+
+  <div class="checkout-wrap">
+    <div>
+      <div class="form-card">
+        <h3>📍 Dados de entrega</h3>
+        <div class="form-grid">
+          <div class="field full"><label>Nome completo</label><input type="text" placeholder="Seu nome"></div>
+          <div class="field"><label>E-mail</label><input type="email" placeholder="voce@email.com"></div>
+          <div class="field"><label>Telefone</label><input type="text" placeholder="(11) 90000-0000"></div>
+          <div class="field"><label>CEP</label><input type="text" placeholder="00000-000"></div>
+          <div class="field"><label>Cidade</label><input type="text" placeholder="Sua cidade"></div>
+          <div class="field full"><label>Endereço</label><input type="text" placeholder="Rua, número, complemento"></div>
+          <div class="field"><label>Bairro</label><input type="text" placeholder="Bairro"></div>
+          <div class="field"><label>UF</label>
+            <select><option>SP</option><option>RJ</option><option>MG</option><option>Outro</option></select>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <h3>💳 Forma de pagamento</h3>
+        <div class="pay-methods">
+
+          <div class="pay-method active" data-method="pix">
+            <div class="head">
+              <div class="l"><div class="radio"></div><span>⚡ Pix</span></div>
+              <span class="discount">10% OFF à vista</span>
+            </div>
+            <div class="pay-detail">
+              <div class="pix-box">
+                <div class="qr"></div>
+                <p style="color:var(--muted); font-size:.85rem">O QR Code é gerado após confirmar o pedido. Pagamento aprovado na hora.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pay-method" data-method="cartao">
+            <div class="head"><div class="l"><div class="radio"></div><span>💳 Cartão de crédito</span></div><span style="color:var(--muted); font-size:.78rem">até 5x sem juros</span></div>
+            <div class="pay-detail">
+              <div class="form-grid">
+                <div class="field full"><label>Número do cartão</label><input type="text" placeholder="0000 0000 0000 0000"></div>
+                <div class="field full"><label>Nome impresso no cartão</label><input type="text" placeholder="Como está no cartão"></div>
+                <div class="field"><label>Validade</label><input type="text" placeholder="MM/AA"></div>
+                <div class="field"><label>CVV</label><input type="text" placeholder="123"></div>
+                <div class="field full"><label>Parcelas</label>
+                  <select>
+                    <option>1x sem juros</option><option>2x sem juros</option><option>3x sem juros</option>
+                    <option>4x sem juros</option><option selected>5x sem juros</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pay-method" data-method="boleto">
+            <div class="head"><div class="l"><div class="radio"></div><span>🧾 Boleto bancário</span></div><span style="color:var(--muted); font-size:.78rem">aprovação em até 2 dias úteis</span></div>
+            <div class="pay-detail">
+              <p style="color:var(--muted); font-size:.85rem">O boleto será gerado após a confirmação do pedido, com vencimento em 3 dias úteis.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <aside class="summary js-checkout-summary">
+      <h3>Resumo do pedido</h3>
+      <div class="summary-row"><span>Subtotal</span><span class="js-co-subtotal">R$ 0,00</span></div>
+      <div class="summary-row"><span>Frete</span><span class="js-co-shipping">Grátis</span></div>
+      <div class="summary-row total"><span>Total no cartão</span><span class="js-co-total">R$ 0,00</span></div>
+      <div class="summary-row" style="color:var(--green)"><span>Total no Pix (10% OFF)</span><span class="js-co-total-pix">R$ 0,00</span></div>
+
+      <button class="btn btn-primary btn-block js-place-order" style="margin-top:16px">Confirmar pedido 🔒</button>
+      <div class="trust-mini">
+        <span>🔒 Dados protegidos</span>
+        <span>✈ Envio rastreado</span>
+      </div>
+      <p style="color:var(--muted); font-size:.72rem; margin-top:14px">Protótipo de vitrine — nenhum pagamento real é processado nesta tela.</p>
+    </aside>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="container">
+    <div class="foot-bottom"><span>© 2026 JJ Imports.</span><span>Protótipo — não processa pagamentos reais.</span></div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
