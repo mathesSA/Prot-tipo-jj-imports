@@ -410,4 +410,24 @@ footer.site{ border-top:1px solid var(--line); background:var(--black-soft); pad
   .search-box{ display:none; }
   .foot-grid{ grid-template-columns:1fr; }
   .promo{ flex-direction:column; align-items:flex-start; }
+
+  .header-inner{ gap:10px; padding:12px 14px; }
+  .header-icons{ gap:10px; }
+  .icon-link small{ display:none; }
+  .theme-toggle{ width:36px; height:36px; font-size:1rem; }
+  .logo img, .logo svg{ width:36px; height:36px; }
+  .logo b{ font-size:1rem; }
+
+  .steps{ margin:16px 0 26px; }
+  .step span{ display:none; }
+  .step .dot{ width:28px; height:28px; font-size:.75rem; }
+  .step-line{ width:20px; margin:0 6px; }
+
+  .form-grid{ grid-template-columns:1fr; }
+  .form-card{ padding:18px; }
+  .pdp-sizes button, .size-grid button{ min-width:0; }
+}
+
+@media (max-width:380px){
+  .icon-link:not(:last-child){ display:none; }
 }
